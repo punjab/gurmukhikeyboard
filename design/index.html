@@ -10,25 +10,29 @@
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="css/layouts/marketing.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="script.js"></script>
     </head>
 
     <body>
-        <div class="header" id="home">
-            <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-                <a class="pure-menu-heading" href="#home">Gurmukhi Keyboard</a>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#pippal">Pippal Labs</a></li>
-                        <li><a href="#gurmukhi">Gurmukhi</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#help">Help</a></li>
-                    </ul>
-            </div>
-        </div>
+        <div class="pure-container" data-effect="pure-effect-scaleRotate"> 
+          <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left"> 
+            <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left"> 
+              <span class="pure-toggle-icon"></span>
+            </label> 
 
-        <div class="splash-container">
+        <div class="pure-drawer" data-position="left">
+          <img src="logo.png" id="logo">
+          <ul id="mainMenu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#pippal">PIPPAL LABS</a></li>
+            <li><a href="#gurmukhi">GURMUKHI</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#help">CONTACT</a></li>
+          </ul>
+        </div> 
+
+        <div class="pure-pusher-container"> 
+          <div class="pure-pusher"><div class="splash-container" id="home">
             <div class="splash">
                 <p><a href="#" class="pure-button pure-button-primary" id="start">Get Started</a></p>
                 <img id="iphone1" src="iphoneBLK.svg">
